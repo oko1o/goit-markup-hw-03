@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,9 +17,9 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <header>
+    <header class="header-wrap">
       <div class="container">
-        <nav>
+        <nav class="nav-wrap">
           <a class="logo" href="./index.html"
             >Web<span class="logo">Studio</span></a
           >
@@ -56,30 +56,30 @@
       </section>
       <section class="features">
         <div class="container">
-          <h2 class="second-header-class">Features</h2>
+          <h2 class="second-header-class visually-hidden">Features</h2>
           <ul class="features-list">
-            <li>
+            <li class="features-list-element">
               <h3 class="third-header-class">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="features-list-element">
               <h3 class="third-header-class">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="features-list-element">
               <h3 class="third-header-class">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="features-list-element">
               <h3 class="third-header-class">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
@@ -100,8 +100,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-header-class">Mark Guerrero</h3>
-              <p class="text">Product Designer</p>
+              <div class="person-desc">
+                <h3 class="third-header-class">Mark Guerrero</h3>
+                <p class="text">Product Designer</p>
+              </div>
             </li>
             <li class="our-team-card">
               <img
@@ -110,8 +112,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-header-class">Tom Ford</h3>
-              <p class="text">Frontend Developer</p>
+              <div class="person-desc">
+                <h3 class="third-header-class">Tom Ford</h3>
+                <p class="text">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team-card">
               <img
@@ -120,8 +124,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-header-class">Camila Garcia</h3>
-              <p class="text">Marketing</p>
+              <div class="person-desc">
+                <h3 class="third-header-class">Camila Garcia</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li class="our-team-card">
               <img
@@ -130,8 +136,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="third-header-class">Daniel Wilson</h3>
-              <p class="text">UI Designer</p>
+              <div class="person-desc">
+                <h3 class="third-header-class">Daniel Wilson</h3>
+                <p class="text">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -147,8 +155,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="third-header-class">Banking App</h3>
-              <p class="text">App</p>
+              <div class="app-desc">
+                <h3 class="third-header-class">Banking App</h3>
+                <p class="text">App</p>
+              </div>
             </li>
             <li class="our-portfolio-card">
               <img
@@ -157,8 +167,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="third-header-class">Cashless Payment</h3>
-              <p class="text">Marketing</p>
+              <div class="app-desc">
+                <h3 class="third-header-class">Cashless Payment</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li class="our-portfolio-card">
               <img
@@ -167,8 +179,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="third-header-class">Meditation App</h3>
-              <p class="text">App</p>
+              <div class="app-desc">
+                <h3 class="third-header-class">Meditation App</h3>
+                <p class="text">App</p>
+              </div>
             </li>
             <li class="our-portfolio-card">
               <img
@@ -177,8 +191,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="third-header-class">Taxi Service</h3>
-              <p class="text">Marketing</p>
+              <div class="app-desc">
+                <h3 class="third-header-class">Taxi Service</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
             <li class="our-portfolio-card">
               <img
@@ -187,8 +203,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="third-header-class">Screen Illustrations</h3>
-              <p class="text">Design</p>
+              <div class="app-desc">
+                <h3 class="third-header-class">Screen Illustrations</h3>
+                <p class="text">Design</p>
+              </div>
             </li>
             <li class="our-portfolio-card">
               <img
@@ -197,8 +215,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="third-header-class">Online Courses</h3>
-              <p class="text">Marketing</p>
+              <div class="app-desc">
+                <h3 class="third-header-class">Online Courses</h3>
+                <p class="text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>

@@ -8,8 +8,14 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 .logo {
@@ -22,8 +28,30 @@ ul {
   color: #4d5ae5;
 }
 
+.container {
+  max-width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .container {
+  display: flex;
+  padding: 24px 0;
+  justify-content: space-between;
+
+}
+
+nav {
+  display: flex;
+}
+
 span.logo {
   color: #2e2f42;
+}
+
+.main-menu {
+  display: flex;
+  gap: 40px;
 }
 
 .nav-link {
@@ -46,6 +74,11 @@ span.logo {
   font-style: normal;
 }
 
+.contact-menu {
+  display: flex;
+  gap: 40px;
+}
+
 .address-link {
   font-size: 16px;
   line-height: 1.5;
@@ -63,6 +96,9 @@ span.logo {
 
 .solutions-wrap {
   background-color: #2e2f42;
+}
+.solutions-wrap .container {
+
 }
 
 .first-header-class {
@@ -83,6 +119,7 @@ span.logo {
   color: #ffffff;
   border: none;
   cursor: pointer;
+  margin: 48px 163px 0 164px;
 }
 
 .button:hover {

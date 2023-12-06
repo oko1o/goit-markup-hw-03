@@ -34,14 +34,20 @@ ul {
   margin-right: auto;
 }
 
-header .container {
-  display: flex;
-  padding: 24px 0;
-  justify-content: space-between;
-
+header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
-nav {
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container a {
+  padding: 24px 0;
+}
+
+nav, address {
   display: flex;
 }
 
@@ -52,6 +58,8 @@ span.logo {
 .main-menu {
   display: flex;
   gap: 40px;
+  margin-left: 76px;
+  align-self: center;
 }
 
 .nav-link {
@@ -77,6 +85,7 @@ span.logo {
 .contact-menu {
   display: flex;
   gap: 40px;
+  align-self: center;
 }
 
 .address-link {
@@ -94,11 +103,16 @@ span.logo {
   color: #404bbf;
 }
 
+section {
+  padding: 120px 0;
+}
+
 .solutions-wrap {
   background-color: #2e2f42;
 }
 .solutions-wrap .container {
-
+  width: 496px;
+  padding: 68px 0;
 }
 
 .first-header-class {
@@ -119,7 +133,8 @@ span.logo {
   color: #ffffff;
   border: none;
   cursor: pointer;
-  margin: 48px 163px 0 164px;
+  display: block;
+  margin: 48px auto 0 auto;
 }
 
 .button:hover {
@@ -130,6 +145,15 @@ span.logo {
   background-color: #404bbf;
 }
 
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-list li {
+  width: calc(1086px / 4);
+}
+
 .second-header-class {
   font-size: 36px;
   line-height: 1.11;
@@ -137,6 +161,10 @@ span.logo {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+
+.features .second-header-class {
+  display: none;
 }
 
 .third-header-class {
@@ -158,16 +186,46 @@ span.logo {
   background-color: #f4f4fd;
 }
 
+.our-team-list, .our-portfolio-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.our-team-list li, .our-portfolio-list li {
+  padding-bottom: 32px;
+}
+
+.our-team-list img, .our-portfolio-list img {
+  display: block;
+  margin-bottom: 32px;
+}
+
 .our-team-card {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .our-portfolio-card {
   background-color: #ffffff;
 }
 
+.our-portfolio-list {
+  flex-wrap: wrap;
+}
+
+.our-portfolio-list li {
+  width: calc(1110px / 3);
+}
+
 .footer-wrap {
   background-color: #2e2f42;
+}
+
+.footer-wrap .container {
+  padding: 100px 0;
+  width: 264px;
+  margin-left: 156px;
 }
 
 .text-footer {

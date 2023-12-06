@@ -8,7 +8,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -50,10 +52,11 @@ header .container a {
 }
 
 .nav-wrap {
-  align-items: center
+  align-items: center;
 }
 
-nav, address {
+nav,
+address {
   display: flex;
 }
 
@@ -173,7 +176,16 @@ span.logo {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .features-list-element {
@@ -212,7 +224,8 @@ span.logo {
   gap: 24px;
 }
 
-.our-team-list img, .our-portfolio-list img {
+.our-team-list img,
+.our-portfolio-list img {
   display: block;
 }
 
@@ -247,7 +260,7 @@ span.logo {
 }
 
 .app-desc {
-  padding: 32px 16px
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -258,7 +271,7 @@ span.logo {
 
 .footer-wrap {
   background-color: #2e2f42;
-  padding: 100px 0
+  padding: 100px 0;
 }
 
 .text-footer {
